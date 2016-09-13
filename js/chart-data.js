@@ -157,23 +157,25 @@ var randomScalingFactor = function(){ return Math.round(Math.random()*1000)};
 				];
 
 window.onload = function(){
-	var chart1 = document.getElementById("line-chart").getContext("2d");
-	window.myLine = new Chart(chart1).Line(lineChartData, {
-		responsive: true
-	});
-	var chart5 = document.getElementById("line2-chart").getContext("2d");
-	window.myLine = new Chart(chart5).Line(lineChartData2, {
-		responsive: true
-	});
-	var chart2 = document.getElementById("bar-chart").getContext("2d");
-	window.myBar = new Chart(chart2).Bar(barChartData, {
-		responsive : true
-	});
-	var chart3 = document.getElementById("doughnut-chart").getContext("2d");
-	window.myDoughnut = new Chart(chart3).Doughnut(doughnutData, {responsive : true
-	});
-	var chart4 = document.getElementById("pie-chart").getContext("2d");
-	window.myPie = new Chart(chart4).Pie(pieData, {responsive : true
-	});
-	
+	var chart1 = document.getElementById("line-chart");
+	if(chart1){
+		chart1 = chart1.getContext("2d");
+		window.myLine = new Chart(chart1).Line(lineChartData, {
+			responsive: true
+		});
+	}
+	var chart5 = document.getElementById("line2-chart");
+	if(chart5){
+		chart5 = chart5.getContext("2d");
+		window.myLine = new Chart(chart5).Line(lineChartData2, {
+			responsive: true
+		});
+	}
+	var chart2 = document.getElementById("bar-chart");
+	if(chart2){
+		chart2 = chart2.getContext("2d");
+		window.myBar = new Chart(chart2).Bar(barChartData, {
+			responsive : true
+		});
+	}	
 };
