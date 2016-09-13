@@ -126,6 +126,62 @@ var randomScalingFactor = function(){ return Math.round(Math.random()*1000)};
 	
 		}
 
+	var barChartData2 = {
+			labels : ["Augustus","September","Oktober","November","December"],
+			datasets : [
+				{
+					fillColor : "rgba(48, 164, 255, 0.2)",
+					strokeColor : "rgba(48, 164, 255, 0.8)",
+					highlightFill : "rgba(48, 164, 255, 0.75)",
+					highlightStroke : "rgba(48, 164, 255, 1)",
+					data : [40,40,40,40,40]
+				},
+				{
+					fillColor : "rgba(24, 158, 82, 0.2)",
+					strokeColor : "rgba(24, 158, 82, 0.8)",
+					highlightFill : "rgba(24, 158, 82, 0.75)",
+					highlightStroke : "rgba(24, 158, 82, 1)",
+					data : [25,8,2,34,35]
+				},
+				{
+					fillColor : "rgba(255,51,0,0.5)",
+					strokeColor : "rgba(255,51,0,0.8)",
+					highlightFill: "rgba(255,51,0,0.75)",
+					highlightStroke: "rgba(255,51,0,1)",
+					data : [15,32,38,16,5]
+				}
+			]
+	
+		}
+
+	var barChartData3 = {
+			labels : ["Augustus","September","Oktober","November","December"],
+			datasets : [
+				{
+					fillColor : "rgba(48, 164, 255, 0.2)",
+					strokeColor : "rgba(48, 164, 255, 0.8)",
+					highlightFill : "rgba(48, 164, 255, 0.75)",
+					highlightStroke : "rgba(48, 164, 255, 1)",
+					data : [32000,22000,16000,37000,50000]
+				}
+			]
+	
+		}
+
+	var barChartData4 = {
+			labels : ["Augustus","September","Oktober","November","December"],
+			datasets : [
+				{
+					fillColor : "rgba(48, 164, 255, 0.2)",
+					strokeColor : "rgba(48, 164, 255, 0.8)",
+					highlightFill : "rgba(48, 164, 255, 0.75)",
+					highlightStroke : "rgba(48, 164, 255, 1)",
+					data : [25,20,20,40,60]
+				}
+			]
+	
+		}
+
 	var pieData = [
 				{
 					value: 300,
@@ -208,6 +264,27 @@ window.onload = function(){
 	if(chart3){
 		chart3 = chart3.getContext("2d");
 		window.myBar = new Chart(chart3).Line(lineChartData3, {
+			responsive : true
+		});
+	}
+	var chart4 = document.getElementById("bar2-chart");
+	if(chart4){
+		chart4 = chart4.getContext("2d");
+		window.myBar = new Chart(chart4).Bar(barChartData2, {
+			responsive : true
+		});
+	}
+	var chart6 = document.getElementById("bar3-chart");
+	if(chart6){
+		chart6 = chart6.getContext("2d");
+		window.myBar = new Chart(chart6).Bar(barChartData3, {
+			responsive : true
+		});
+	}
+	var chart7 = document.getElementById("bar4-chart");
+	if(chart7){
+		chart7 = chart7.getContext("2d");
+		window.myBar = new Chart(chart7).Bar(barChartData4, {
 			responsive : true
 		});
 	}	

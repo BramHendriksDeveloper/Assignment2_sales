@@ -44,180 +44,70 @@
 		<ul class="nav menu">
 			<li><a href="index.html"><svg class="glyph stroked dashboard-dial"><use xlink:href="#stroked-dashboard-dial"></use></svg> Omzet en Onderhandelingen</a></li>
 			<li><a href="product_retailers.html"><svg class="glyph stroked calendar"><use xlink:href="#stroked-table"></use></svg> Projecten en Retailers</a></li>
-			<li class="active"><a href="personeel_opslag.html"><svg class="glyph stroked line-graph"><use xlink:href="#stroked-app-window"></use></svg> Personeel en opslag</a></li>
+			<li class="active"><a href="personeel_opslag.html"><svg class="glyph stroked line-graph"><use xlink:href="#stroked-app-window"></use></svg> Personeel en Opslag</a></li>
 		</ul>
 		
 	</div><!--/.sidebar-->
 		
 	<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">		
 		<div class="row">
-			<div class="col-xs-12 col-md-6 col-lg-3">
-				<div class="panel panel-blue panel-widget ">
-					<div class="row no-padding">
-						<div class="col-sm-3 col-lg-5 widget-left">
-							<svg class="glyph stroked bag"><use xlink:href="#stroked-app-window-with-content"></use></svg>
-						</div>
-						<div class="col-sm-9 col-lg-7 widget-right">
-							<div class="large">8.440</div>
-							<div class="text-muted">Omzet maatwerkproducten</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-xs-12 col-md-6 col-lg-3">
-				<div class="panel panel-blue panel-widget">
-					<div class="row no-padding">
-						<div class="col-sm-3 col-lg-5 widget-left">
-							<svg class="glyph stroked empty-message"><use xlink:href="#stroked-app-window-with-content"></use></svg>
-						</div>
-						<div class="col-sm-9 col-lg-7 widget-right">
-							<div class="large">23.539</div>
-							<div class="text-muted">Omzet standaardproducten</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-xs-12 col-md-6 col-lg-3">
-				<div class="panel panel-blue panel-widget">
-					<div class="row no-padding">
-						<div class="col-sm-3 col-lg-5 widget-left">
-							<svg class="glyph stroked male-user"><use xlink:href="#stroked-app-window-with-content"></use></svg>
-						</div>
-						<div class="col-sm-9 col-lg-7 widget-right">
-							<div class="large">200</div>
-							<div class="text-muted">Aantal Offertes</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-xs-12 col-md-6 col-lg-3">
-				<div class="panel panel-blue panel-widget">
-					<div class="row no-padding">
-						<div class="col-sm-3 col-lg-5 widget-left">
-							<svg class="glyph stroked app-window-with-content"><use xlink:href="#stroked-app-window-with-content"></use></svg>
-						</div>
-						<div class="col-sm-9 col-lg-7 widget-right">
-							<div class="large">30</div>
-							<div class="text-muted">Aantal bestellingen</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div><!--/.row-->
-		
-		<div class="row">
 			<div class="col-lg-6">
 				<div class="panel panel-default">
-					<div class="panel-heading">Maatwerkproducten (x1000)</div>
+					<div class="panel-heading">Ruimte opslag</div>
 					<div class="panel-body">
 						<div class="canvas-wrapper">
-							<canvas class="main-chart" id="line-chart" height="200" width="600"></canvas>
+							<canvas class="main-chart" id="bar3-chart" height="200" width="600"></canvas>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="col-lg-6">
 				<div class="panel panel-default">
-					<div class="panel-heading">Standaardproducten (x1000)</div>
+					<div class="panel-heading">Beschikbaarheid personeel: Totaal - Beschikbaar - Bezet</div>
 					<div class="panel-body">
 						<div class="canvas-wrapper">
-							<canvas class="main-chart" id="line2-chart" height="200" width="600"></canvas>
+							<canvas class="main-chart" id="bar2-chart" height="200" width="600"></canvas>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div><!--/.row-->
-		
-		<div class="row">
-			<div class="col-md-6 noMargin">
-				<div class="col-xs-6 col-md-6">
-					<div class="panel panel-default">
-						<div class="panel-body easypiechart-panel">
-							<h4>Omzet maatwerkproducten</h4>
-							<div class="easypiechart" id="easypiechart-teal" data-percent="2" ><span class="percent">2%</span>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-xs-6 col-md-6">
-					<div class="panel panel-default">
-						<div class="panel-body easypiechart-panel">
-							<h4>Omzet standaardproducten</h4>
-							<div class="easypiechart" id="easypiechart-blue" data-percent="8" ><span class="percent">8%</span>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-xs-6 col-md-6">
-					<div class="panel panel-default">
-						<div class="panel-body easypiechart-panel">
-							<h4>Offertes tot bestelling</h4>
-							<div class="easypiechart" id="easypiechart-orange" data-percent="15" ><span class="percent">15%</span>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-xs-6 col-md-6">
-					<div class="panel panel-default">
-						<div class="panel-body easypiechart-panel">
-							<h4>Definitief afgewezen</h4>
-							<div class="easypiechart" id="easypiechart-red" data-percent="47" ><span class="percent">47%</span>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-6">
+			<div class="col-lg-6">
 				<div class="panel panel-default">
-					<div class="panel-heading">Onderhandelingen</div>
+					<div class="panel-heading">Producten in op voorraad</div>
 					<div class="panel-body">
 						<table data-toggle="table" id="table-style" data-url="tables/data2.json" data-row-style="rowStyle">
 							<thead>
-								<tr>
-									<th data-field="id" data-align="right" >ID</th>
-									<th data-field="name" >Name</th>
-									<th data-field="bedrijf" >Bedrijf</th>
-									<th data-field="price">Status</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr class="danger">
-									<td data-field="id" data-align="right" >2</td>
-									<td data-field="name">ACS Hoofdgebouw Eindhoven</td>
-									<td data-field="bedrijf">Philips</td>
-									<td data-field="price">Afgewezen</td>
-								</tr>
-								<tr class="danger">
-									<td data-field="id" data-align="right" >2</td>
-									<td data-field="name">ACS Healthcare Best</td>
-									<td data-field="bedrijf">Philips</td>
-									<td data-field="price">Afgewezen</td>
-								</tr>
-								<tr class="success">
-									<td data-field="id" data-align="right" >1</td>
-									<td data-field="name">ACS Fabrikam Hoofdgebouw</td>
-									<td data-field="bedrijf">Fabrikam</td>
-									<td data-field="price">Geaccepteerd</td>
-								</tr>
-								<tr class="warning">
-									<td data-field="id" data-align="right" >3</td>
-									<td data-field="name">ACS Avan 's-Hertogenbosch</td>
-									<td data-field="bedrijf">Avans Hogescholen</td>
-									<td data-field="price">Selectieproces</td>
-								</tr>
-								<tr>
-									<td data-field="id" data-align="right" >5</td>
-									<td data-field="name">ACS HAS 's-Hertogenbosch</td>
-									<td data-field="bedrijf">HAS Hogescholen</td>
-									<td data-field="price">Voorstel</td>
-								</tr>
-								<tr>
-									<td data-field="id" data-align="right" >5</td>
-									<td data-field="name">ACS Albert Heijn Bijlmer</td>
-									<td data-field="bedrijf">Albert Heijn</td>
-									<td data-field="price">Voorstel</td>
-								</tr>
-							</tbody>
+									<tr>
+										<th data-field="product" >Product</th>
+										<th data-field="omzet" >Hoeveelheid</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr class="warning">
+										<td data-field="product">Small Aircleaner</td>
+										<td data-field="omzet">42</td>
+									</tr>
+									<tr>
+										<td data-field="product">Large Aircleaner</td>
+										<td data-field="omzet">423</td>
+									</tr>
+									<tr class="danger">
+										<td data-field="product">Small Heather</td>
+										<td data-field="omzet">0</td>
+									</tr>
+									<tr>
+										<td data-field="product">Large Heather</td>
+										<td data-field="omzet">320</td>
+									</tr>
+									<tr>
+										<td data-field="product">Small AC</td>
+										<td data-field="omzet">125</td>
+									</tr>
+									<tr>
+										<td data-field="product">Large AC</td>
+										<td data-field="omzet">254</td>
+									</tr>
+								</tbody>
 						</table>
 						<script>
 							$(function () {
@@ -238,6 +128,20 @@
 								});
 							});
 						</script>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<div class="panel panel-default">
+					<div class="panel-heading">Verwachte verkoop
+						<a class="dropdownProducten2" href="#">
+							<span data-toggle="collapse" href="#sub-item-1">Small Aircleaner <svg class="glyph stroked chevron-down"><use xlink:href="#stroked-chevron-down"></use></svg></span> 
+						</a>
+					</div>
+					<div class="panel-body">
+						<div class="canvas-wrapper">
+							<canvas class="main-chart" id="bar4-chart" height="200" width="600"></canvas>
+						</div>
 					</div>
 				</div>
 			</div>
