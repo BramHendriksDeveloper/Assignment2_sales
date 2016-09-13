@@ -936,3 +936,16 @@ h1.page-header {
 .noMargin {
 	padding: 0;
 }
+
+.dropdownRetailers{
+	margin-left: 120px;
+}
+
+.dropdownProjecten{
+	margin-left: 200px;
+}
+
+.subjectHeader {
+	margin-left: 20px;
+	margin-top: 10px;
+}
