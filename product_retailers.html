@@ -68,46 +68,57 @@
 				</div>
 				<div class="col-md-12">
 					<div class="panel panel-default">
-						<div class="panel-heading">Omzet standaard product</div>
+						<div class="panel-heading">Nieuwe retailers</div>
 						<div class="panel-body">
 							<table data-toggle="table" id="table-style" data-url="tables/data2.json" data-row-style="rowStyle">
 								<thead>
 									<tr>
-										<th data-field="product" >Product</th>
-										<th data-field="omzet" >Omzet</th>
-										<th data-field="omzetProcent">Omzet Percentage</th>
+										<th data-field="naam" >Naam</th>
+										<th data-field="locatie" >Locatie</th>
+										<th data-field="branch">Branch</th>
+										<th data-field="contact">Contact</th>
 									</tr>
 								</thead>
 								<tbody>
-									<tr class="warning">
-										<td data-field="product">Small Aircleaner</td>
-										<td data-field="omzet">110.000</td>
-										<td data-field="retailers">15%</td>
+									<tr>
+										<td data-field="naam">BCC - Henry Kamers</td>
+										<td data-field="locatie">Dordrecht</td>
+										<td data-field="branch">Techniek</td>
+										<td data-field="regeling">
+											<span class="input-group-btn">
+												<button class="btn btn-primary btn-md" id="btn-todo"><i class="glyphicon glyphicon-info-sign"></i></button>
+											</span>
+										</td>
 									</tr>
-									<tr class="success">
-										<td data-field="product">Large Aircleaner</td>
-										<td data-field="omzet">42.000</td>
-										<td data-field="retailers">34%</td>
+									<tr>
+										<td data-field="naam">Klavers Reparatie en Winkels</td>
+										<td data-field="locatie">Eindhoven</td>
+										<td data-field="branch">Techniek</td>
+										<td data-field="regeling">
+											<span class="input-group-btn">
+												<button class="btn btn-primary btn-md" id="btn-todo"><i class="glyphicon glyphicon-info-sign"></i></button>
+											</span>
+										</td>
 									</tr>
-									<tr class="danger">
-										<td data-field="product">Small Heather</td>
-										<td data-field="omzet">13.000</td>
-										<td data-field="retailers">1%</td>
+									<tr>
+										<td data-field="naam">Huis Aan Huiskamer</td>
+										<td data-field="locatie">Groningen</td>
+										<td data-field="branch">Huishouden</td>
+										<td data-field="regeling">
+											<span class="input-group-btn">
+												<button class="btn btn-primary btn-md" id="btn-todo"><i class="glyphicon glyphicon-info-sign"></i></button>
+											</span>
+										</td>
 									</tr>
-									<tr class="success">
-										<td data-field="product">Large Heather</td>
-										<td data-field="omzet">800.000</td>
-										<td data-field="retailers">45%</td>
-									</tr>
-									<tr class="success">
-										<td data-field="product">Small AC</td>
-										<td data-field="omzet">304.000</td>
-										<td data-field="retailers">30%</td>
-									</tr>
-									<tr class="warning">
-										<td data-field="product">Large AC</td>
-										<td data-field="omzet">630.000</td>
-										<td data-field="retailers">28%</td>
+									<tr>
+										<td data-field="naam">Winkels Swinkels</td>
+										<td data-field="locatie">Heerhugowaard</td>
+										<td data-field="branch">Airconditioning</td>
+										<td data-field="regeling">
+											<span class="input-group-btn">
+												<button class="btn btn-primary btn-md" id="btn-todo"><i class="glyphicon glyphicon-info-sign"></i></button>
+											</span>
+										</td>
 									</tr>
 								</tbody>
 							</table>
@@ -233,6 +244,73 @@
 								<div class="text-muted">Overtijd</div>
 								<div class="large">0 dagen</div>
 							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-12">
+					<div class="panel panel-default">
+						<div class="panel-heading">Omzet standaard product</div>
+						<div class="panel-body">
+							<table data-toggle="table" id="table-style" data-url="tables/data2.json" data-row-style="rowStyle">
+								<thead>
+									<tr>
+										<th data-field="product" >Product</th>
+										<th data-field="omzet" >Omzet</th>
+										<th data-field="omzetProcent">Omzet Percentage</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr class="warning">
+										<td data-field="product">Small Aircleaner</td>
+										<td data-field="omzet">110.000</td>
+										<td data-field="retailers">15%</td>
+									</tr>
+									<tr class="success">
+										<td data-field="product">Large Aircleaner</td>
+										<td data-field="omzet">42.000</td>
+										<td data-field="retailers">34%</td>
+									</tr>
+									<tr class="danger">
+										<td data-field="product">Small Heather</td>
+										<td data-field="omzet">13.000</td>
+										<td data-field="retailers">1%</td>
+									</tr>
+									<tr class="success">
+										<td data-field="product">Large Heather</td>
+										<td data-field="omzet">800.000</td>
+										<td data-field="retailers">45%</td>
+									</tr>
+									<tr class="success">
+										<td data-field="product">Small AC</td>
+										<td data-field="omzet">304.000</td>
+										<td data-field="retailers">30%</td>
+									</tr>
+									<tr class="warning">
+										<td data-field="product">Large AC</td>
+										<td data-field="omzet">630.000</td>
+										<td data-field="retailers">28%</td>
+									</tr>
+								</tbody>
+							</table>
+							<script>
+								$(function () {
+									$('#hover, #striped, #condensed').click(function () {
+										var classes = 'table';
+							
+										if ($('#hover').prop('checked')) {
+											classes += ' table-hover';
+										}
+										if ($('#condensed').prop('checked')) {
+											classes += ' table-condensed';
+										}
+										$('#table-style').bootstrapTable('destroy')
+											.bootstrapTable({
+												classes: classes,
+												striped: $('#striped').prop('checked')
+											});
+									});
+								});
+							</script>
 						</div>
 					</div>
 				</div>
