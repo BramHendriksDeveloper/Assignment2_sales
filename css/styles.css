@@ -932,3 +932,7 @@ h1.page-header {
 .main {
 	margin-top: 20px;
 }
+
+.noMargin {
+	padding: 0;
+}
