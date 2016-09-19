@@ -42,123 +42,106 @@
 			</div>
 		</form>
 		<ul class="nav menu">
-			<li class="active"><a href="index.html"><svg class="glyph stroked dashboard-dial"><use xlink:href="#stroked-dashboard-dial"></use></svg> Omzet</a></li>
+			<li><a href="index.html"><svg class="glyph stroked dashboard-dial"><use xlink:href="#stroked-dashboard-dial"></use></svg> Omzet</a></li>
 			<li><a href="onderhandelingen.html"><svg class="glyph stroked pencil"><use xlink:href="#stroked-pencil"></use></svg> Offertes</a></li>
 			<li><a href="omgeving.html"><svg class="glyph stroked dashboard-dial"><use xlink:href="#stroked-dashboard-dial"></use></svg> Omgeving</a></li>
 			<li><a href="projecten_producten.html"><svg class="glyph stroked calendar"><use xlink:href="#stroked-table"></use></svg> Projecten en Producten</a></li>
 			<li><a href="retailers.html"><svg class="glyph stroked calendar"><use xlink:href="#stroked-table"></use></svg> Retailers</a></li>
-			<li><a href="personeel.html"><svg class="glyph stroked line-graph"><use xlink:href="#stroked-app-window"></use></svg> Personeel</a></li>
+			<li class="active"><a href="personeel.html"><svg class="glyph stroked line-graph"><use xlink:href="#stroked-app-window"></use></svg> Personeel</a></li>
 			<li><a href="opslag.html"><svg class="glyph stroked line-graph"><use xlink:href="#stroked-app-window"></use></svg> Budget en Opslag</a></li>
 		</ul>
-
+		
 	</div><!--/.sidebar-->
 		
 	<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">		
 		<div class="row">
-			<div class="col-xs-12 col-md-6 col-lg-3">
-				<div class="panel panel-blue panel-widget ">
-					<div class="row no-padding">
-						<div class="col-sm-3 col-lg-5 widget-left">
-							<svg class="glyph stroked bag"><use xlink:href="#stroked-app-window-with-content"></use></svg>
-						</div>
-						<div class="col-sm-9 col-lg-7 widget-right">
-							<div class="large">8.440</div>
-							<div class="text-muted">Omzet maatwerkproducten</div>
+			<div class="col-lg-6">
+				<div class="panel panel-default">
+					<div class="panel-heading"><div class="greyLabel noMargin">Beschikbaarheid personeel: </div><div class="blueLabel noMargin">Totaal -</div><div class="greenLabel noMargin">Beschikbaar -</div><div class="redLabel noMargin">Bezet</div></div>
+					<div class="panel-body">
+						<div class="canvas-wrapper">
+							<canvas class="main-chart" id="bar2-chart" height="150" width="600"></canvas>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="col-xs-12 col-md-6 col-lg-3">
-				<div class="panel panel-blue panel-widget">
-					<div class="row no-padding">
-						<div class="col-sm-3 col-lg-5 widget-left">
-							<svg class="glyph stroked empty-message"><use xlink:href="#stroked-app-window-with-content"></use></svg>
-						</div>
-						<div class="col-sm-9 col-lg-7 widget-right">
-							<div class="large">23.539</div>
-							<div class="text-muted">Omzet standaardproducten</div>
-						</div>
+			<div class="col-lg-6">
+				<div class="panel panel-default">
+					<div class="panel-heading">Maatwerkprojecten
+							<a class="dropdownPersoneel" href="#">
+								<span data-toggle="collapse" href="#sub-item-1">Karel Molenaar <svg class="glyph stroked chevron-down"><use xlink:href="#stroked-chevron-down"></use></svg></span> 
+							</a>
 					</div>
-				</div>
-			</div>
-			<div class="col-xs-12 col-md-6 col-lg-3">
-				<div class="panel panel-blue panel-widget">
-					<div class="row no-padding">
-						<div class="col-sm-3 col-lg-5 widget-left">
-							<svg class="glyph stroked male-user"><use xlink:href="#stroked-app-window-with-content"></use></svg>
-						</div>
-						<div class="col-sm-9 col-lg-7 widget-right">
-							<div class="large">200</div>
-							<div class="text-muted">Aantal Offertes</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-xs-12 col-md-6 col-lg-3">
-				<div class="panel panel-blue panel-widget">
-					<div class="row no-padding">
-						<div class="col-sm-3 col-lg-5 widget-left">
-							<svg class="glyph stroked app-window-with-content"><use xlink:href="#stroked-app-window-with-content"></use></svg>
-						</div>
-						<div class="col-sm-9 col-lg-7 widget-right">
-							<div class="large">30</div>
-							<div class="text-muted">Aantal bestellingen</div>
+					<div class="panel-body">
+						<div class="canvas-wrapper">
+							<canvas class="main-chart" id="line5-chart" height="150" width="600"></canvas>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div><!--/.row-->
-		
-		<div class="row">
+        <div class="row">
 			<div class="col-lg-6">
 				<div class="panel panel-default">
-					<div class="panel-heading"><div class="greyLabel noMargin">Maatwerkproducten: </div><div class="greenLabel noMargin">Winst -</div><div class="redLabel noMargin">Kosten -</div><div class="blueLabel noMargin">Omzet</div>(x1000)</div>
-					<div class="panel-body">
+					<div class="panel-heading"><div class="greyLabel noMargin">Materiaal: </div><div class="blueLabel noMargin">Salescar -</div><div class="greenLabel noMargin">ACS iPhone -</div><div class="yellowLabel noMargin">ACS MacBook</div>
+							<a class="dropdownPersoneel2" href="#">
+								<span data-toggle="collapse" href="#sub-item-1">Karel Molenaar <svg class="glyph stroked chevron-down"><use xlink:href="#stroked-chevron-down"></use></svg></span> 
+							</a>
+					</div>
+                    <div class="panel-body">
 						<div class="canvas-wrapper">
-							<canvas class="main-chart" id="line-chart" height="200" width="600"></canvas>
+							<canvas class="main-chart" id="bar7-chart" height="150" width="600"></canvas>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="col-lg-6">
 				<div class="panel panel-default">
-					<div class="panel-heading"><div class="greyLabel noMargin">Standaardproducten: </div><div class="greenLabel noMargin">Winst -</div><div class="redLabel noMargin">Kosten -</div><div class="blueLabel noMargin">Omzet</div>(x1000)</div>
-					<div class="panel-body">
+                    <div class="panel-heading"><div class="greyLabel noMargin">Offertes: </div><div class="blueLabel noMargin">opgemaakt -</div><div class="greenLabel noMargin">afgehandeld</div>
+							<a class="dropdownPersoneel3" href="#">
+								<span data-toggle="collapse" href="#sub-item-1">Karel Molenaar <svg class="glyph stroked chevron-down"><use xlink:href="#stroked-chevron-down"></use></svg></span> 
+							</a>
+					</div>
+                    <div class="panel-body">
 						<div class="canvas-wrapper">
-							<canvas class="main-chart" id="line2-chart" height="200" width="600"></canvas>
+							<canvas class="main-chart" id="line6-chart" height="150" width="600"></canvas>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div><!--/.row-->
-
-		<div class="row">
+        <div class="row">
 			<div class="col-lg-6">
 				<div class="panel panel-default">
-					<div class="panel-heading"><div class="greyLabel noMargin">Duitsland: </div><div class="blueLabel noMargin">Vraag Retailers -</div><div class="greenLabel noMargin">Mogelijke Productie</div>
-						<a class="dropdownProducten3" href="#">
-							<span data-toggle="collapse" href="#sub-item-1">Small Heather <svg class="glyph stroked chevron-down"><use xlink:href="#stroked-chevron-down"></use></svg></span> 
-						</a>
+					<div class="panel-heading">Omzet (x1000)
+							<a class="dropdownPersoneel4" href="#">
+								<span data-toggle="collapse" href="#sub-item-1">Karel Molenaar <svg class="glyph stroked chevron-down"><use xlink:href="#stroked-chevron-down"></use></svg></span> 
+							</a>
 					</div>
-					<div class="panel-body">
+                    <div class="panel-body">
 						<div class="canvas-wrapper">
-							<canvas class="main-chart" id="bar5-chart" height="200" width="600"></canvas>
+							<canvas class="main-chart" id="line7-chart" height="150" width="600"></canvas>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="col-lg-6">
 				<div class="panel panel-default">
-					<div class="panel-heading"><div class="greyLabel noMargin">Duitsland: </div><div class="blueLabel noMargin">Totaal omzet -</div><div class="greenLabel noMargin">Omzet Standaardproducten</div>(x1000)</div>
-					<div class="panel-body">
+                    <div class="panel-heading">Verkopen
+                            <a class="dropdownPersoneel5" href="#">
+								<span data-toggle="collapse" href="#sub-item-1">Karel Molenaar <svg class="glyph stroked chevron-down"><use xlink:href="#stroked-chevron-down"></use></svg></span> 
+							</a>
+					</div>
+                    <div class="panel-body">
 						<div class="canvas-wrapper">
-							<canvas class="main-chart" id="line4-chart" height="200" width="600"></canvas>
+							<canvas class="main-chart" id="line8-chart" height="150" width="600"></canvas>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div><!--/.row-->
 	</div>	<!--/.main-->
+		  
 
 	<script src="js/jquery-1.11.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>

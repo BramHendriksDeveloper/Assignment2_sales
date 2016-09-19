@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sales - Dashboard</title>
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/datepicker3.css" rel="stylesheet">
+<link href="css/styles.css" rel="stylesheet">
+
+<!--Icons-->
+<script src="js/lumino.glyphs.js"></script>
+
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sidebar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#"><span>ACS</span>Sales</a>
+			</div>
+							
+		</div><!-- /.container-fluid -->
+	</nav>
+		
+	<div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
+		<form role="search">
+			<div class="form-group">
+				<input type="text" class="form-control" placeholder="Search">
+			</div>
+		</form>
+		<ul class="nav menu">
+			<li><a href="index.html"><svg class="glyph stroked dashboard-dial"><use xlink:href="#stroked-dashboard-dial"></use></svg> Omzet</a></li>
+			<li><a href="onderhandelingen.html"><svg class="glyph stroked pencil"><use xlink:href="#stroked-pencil"></use></svg> Offertes</a></li>
+			<li class="active"><a href="omgeving.html"><svg class="glyph stroked dashboard-dial"><use xlink:href="#stroked-dashboard-dial"></use></svg> Omgeving</a></li>
+			<li><a href="projecten_producten.html"><svg class="glyph stroked calendar"><use xlink:href="#stroked-table"></use></svg> Projecten en Producten</a></li>
+			<li><a href="retailers.html"><svg class="glyph stroked calendar"><use xlink:href="#stroked-table"></use></svg> Retailers</a></li>
+			<li><a href="personeel.html"><svg class="glyph stroked line-graph"><use xlink:href="#stroked-app-window"></use></svg> Personeel</a></li>
+			<li><a href="opslag.html"><svg class="glyph stroked line-graph"><use xlink:href="#stroked-app-window"></use></svg> Budget en Opslag</a></li>
+		</ul>
+
+	</div><!--/.sidebar-->
+		
+	<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">		
+		<div class="row">
+			<div class="col-lg-6">
+				<div class="panel panel-default">
+					<div class="panel-heading"><div class="greyLabel noMargin">Markaandeel: </div><div class="greenLabel noMargin">ACS -</div><div class="blueLabel noMargin">Concurent 1 -</div><div class="yellowLabel noMargin">Concurent 2 -</div><div class="redLabel noMargin">Overig</div> (%)</div>
+					<div class="panel-body">
+						<div class="canvas-wrapper">
+							<canvas class="main-chart" id="line9-chart" height="200" width="600"></canvas>
+						</div>
+					</div>
+                    <div class="panel-heading">Concurenten Jaarcijfers
+                        <a class="dropdownConcurenten" href="#">
+                            <span data-toggle="collapse" href="#sub-item-1">2015 <svg class="glyph stroked chevron-down"><use xlink:href="#stroked-chevron-down"></use></svg></span> 
+                        </a>
+                        <a href="#">
+                            <span data-toggle="collapse" href="#sub-item-1">Concurent 1 <svg class="glyph stroked chevron-down"><use xlink:href="#stroked-chevron-down"></use></svg></span> 
+                        </a>
+                    </div>
+                    <div class="panel-body">
+                        <div class="col-xs-6 col-md-6">
+                            <div class="easypiechart-panel">
+                                <h4>Gemiddeld Marktaandeel</h4>
+                                <div class="easypiechart" id="easypiechart-teal" data-percent="43" ><span class="percent">43%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="text-muted">Totale Winst</div>
+                            <div class="large">12.340.115</div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="text-muted">Totale Kosten</div>
+                            <div class="large">9.262.150</div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="text-muted">Totale Omzet</div>
+                            <div class="large">3.077.965</div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="text-muted">Succesvolste Periode</div>
+                            <div class="large">Q4</div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="text-muted">Laagste Marktaandeel</div>
+                            <div class="large">39%</div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="text-muted">Hoogste Marktaandeel</div>
+                            <div class="large">48%</div>
+                        </div>
+                    </div>
+                </div>
+			</div>
+            <div class="col-lg-6">
+				<div class="panel panel-default">
+					<div class="panel-heading">Branches</div>
+					<div class="panel-body">
+                        <div class="col-xs-6 col-md-4">
+                            <table data-toggle="table" id="table-style" data-url="tables/data2.json" data-row-style="rowStyle">
+                                <thead>
+                                    <tr>
+                                        <th data-field="branch" >Branch</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td data-field="product">Techniek</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-field="product">Huishouden</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-field="product">Airconditioning</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <script>
+                                $(function () {
+                                    $('#hover, #striped, #condensed').click(function () {
+                                        var classes = 'table';
+                            
+                                        if ($('#hover').prop('checked')) {
+                                            classes += ' table-hover';
+                                        }
+                                        if ($('#condensed').prop('checked')) {
+                                            classes += ' table-condensed';
+                                        }
+                                        $('#table-style').bootstrapTable('destroy')
+                                            .bootstrapTable({
+                                                classes: classes,
+                                                striped: $('#striped').prop('checked')
+                                            });
+                                    });
+                                });
+                            </script>
+                        </div>
+					</div>
+                </div>
+			</div>
+            
+            <div class="col-md-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">Wetgeving</div>
+                    <div class="panel-body">
+                        <table data-toggle="table" id="table-style" data-url="tables/data2.json" data-row-style="rowStyle">
+                            <thead>
+                                <tr>
+                                    <th data-field="name" >Product</th>
+                                    <th data-field="land">Land</th>
+                                    <th data-field="regeling"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td data-field="name">Heathing</td>
+                                    <td data-field="land">Nederland</td>
+                                    <td data-field="regeling">
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-primary btn-md" id="btn-todo"><i class="glyphicon glyphicon-info-sign"></i></button>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-field="name">Cooling</td>
+                                    <td data-field="land">Nederland</td>
+                                    <td data-field="regeling">
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-primary btn-md" id="btn-todo"><i class="glyphicon glyphicon-info-sign"></i></button>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-field="name">Aircleaner</td>
+                                    <td data-field="land">Nederland</td>
+                                    <td data-field="regeling">
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-primary btn-md" id="btn-todo"><i class="glyphicon glyphicon-info-sign"></i></button>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-field="name">Heathing</td>
+                                    <td data-field="land">Duitsland</td>
+                                    <td data-field="regeling">
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-primary btn-md" id="btn-todo"><i class="glyphicon glyphicon-info-sign"></i></button>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-field="name">Cooling</td>
+                                    <td data-field="land">Duitsland</td>
+                                    <td data-field="regeling">
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-primary btn-md" id="btn-todo"><i class="glyphicon glyphicon-info-sign"></i></button>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-field="name">Aircleaner</td>
+                                    <td data-field="land">Duitsland</td>
+                                    <td data-field="regeling">
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-primary btn-md" id="btn-todo"><i class="glyphicon glyphicon-info-sign"></i></button>
+                                        </span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <script>
+                            $(function () {
+                                $('#hover, #striped, #condensed').click(function () {
+                                    var classes = 'table';
+                        
+                                    if ($('#hover').prop('checked')) {
+                                        classes += ' table-hover';
+                                    }
+                                    if ($('#condensed').prop('checked')) {
+                                        classes += ' table-condensed';
+                                    }
+                                    $('#table-style').bootstrapTable('destroy')
+                                        .bootstrapTable({
+                                            classes: classes,
+                                            striped: $('#striped').prop('checked')
+                                        });
+                                });
+                            });
+                        </script>
+                        </br>
+                        <div class="alert bg-warning" role="alert">
+                            <svg class="glyph stroked flag"><use xlink:href="#stroked-flag"></use></svg>De <b>heathing</b> regeling in <b>Duitsland</b> wordt aangepast in septermber 2018!<a href="#" class="pull-right"><span class="glyphicon glyphicon-remove"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		</div><!--/.row-->
+	</div>	<!--/.main-->
+
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/chart.min.js"></script>
+	<script src="js/chart-data.js"></script>
+	<script src="js/easypiechart.js"></script>
+	<script src="js/easypiechart-data.js"></script>
+	<script src="js/bootstrap-datepicker.js"></script>
+	<script src="js/bootstrap-table.js"></script>
+	<script>
+		$('#calendar').datepicker({
+		});
+
+		!function ($) {
+		    $(document).on("click","ul.nav li.parent > a > span.icon", function(){          
+		        $(this).find('em:first').toggleClass("glyphicon-minus");      
+		    }); 
+		    $(".sidebar span.icon").find('em:first').addClass("glyphicon-plus");
+		}(window.jQuery);
+
+		$(window).on('resize', function () {
+		  if ($(window).width() > 768) $('#sidebar-collapse').collapse('show')
+		})
+		$(window).on('resize', function () {
+		  if ($(window).width() <= 767) $('#sidebar-collapse').collapse('hide')
+		})
+	</script>	
+</body>
+
+</html>

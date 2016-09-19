@@ -42,9 +42,13 @@
 			</div>
 		</form>
 		<ul class="nav menu">
-			<li><a href="index.html"><svg class="glyph stroked dashboard-dial"><use xlink:href="#stroked-dashboard-dial"></use></svg> Omzet en Onderhandelingen</a></li>
-			<li><a href="product_retailers.html"><svg class="glyph stroked calendar"><use xlink:href="#stroked-table"></use></svg> Projecten en Retailers</a></li>
-			<li class="active"><a href="personeel_opslag.html"><svg class="glyph stroked line-graph"><use xlink:href="#stroked-app-window"></use></svg> Personeel en Opslag</a></li>
+			<li><a href="index.html"><svg class="glyph stroked dashboard-dial"><use xlink:href="#stroked-dashboard-dial"></use></svg> Omzet</a></li>
+			<li><a href="onderhandelingen.html"><svg class="glyph stroked pencil"><use xlink:href="#stroked-pencil"></use></svg> Offertes</a></li>
+			<li><a href="omgeving.html"><svg class="glyph stroked dashboard-dial"><use xlink:href="#stroked-dashboard-dial"></use></svg> Omgeving</a></li>
+			<li><a href="projecten_producten.html"><svg class="glyph stroked calendar"><use xlink:href="#stroked-table"></use></svg> Projecten en Producten</a></li>
+			<li><a href="retailers.html"><svg class="glyph stroked calendar"><use xlink:href="#stroked-table"></use></svg> Retailers</a></li>
+			<li><a href="personeel.html"><svg class="glyph stroked line-graph"><use xlink:href="#stroked-app-window"></use></svg> Personeel</a></li>
+			<li class="active"><a href="opslag.html"><svg class="glyph stroked line-graph"><use xlink:href="#stroked-app-window"></use></svg> Budget en Opslag</a></li>
 		</ul>
 		
 	</div><!--/.sidebar-->
@@ -57,16 +61,6 @@
 					<div class="panel-body">
 						<div class="canvas-wrapper">
 							<canvas class="main-chart" id="bar3-chart" height="200" width="600"></canvas>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-6">
-				<div class="panel panel-default">
-					<div class="panel-heading"><div class="greyLabel noMargin">Beschikbaarheid personeel: </div><div class="greenLabel noMargin">Totaal -</div><div class="redLabel noMargin">Beschikbaar -</div><div class="blueLabel noMargin">Bezet</div></div>
-					<div class="panel-body">
-						<div class="canvas-wrapper">
-							<canvas class="main-chart" id="bar2-chart" height="200" width="600"></canvas>
 						</div>
 					</div>
 				</div>
@@ -141,6 +135,16 @@
 					<div class="panel-body">
 						<div class="canvas-wrapper">
 							<canvas class="main-chart" id="bar4-chart" height="200" width="600"></canvas>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<div class="panel panel-default">
+					<div class="panel-heading"><div class="greyLabel noMargin">Budget: </div><div class="blueLabel noMargin">Beschikbaar -</div><div class="greenLabel noMargin">Resterend -</div><div class="redLabel noMargin">Uitgegeven</div> (x1000)</div>
+					<div class="panel-body">
+						<div class="canvas-wrapper">
+							<canvas class="main-chart" id="bar8-chart" height="200" width="600"></canvas>
 						</div>
 					</div>
 				</div>

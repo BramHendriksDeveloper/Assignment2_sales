@@ -938,7 +938,11 @@ h1.page-header {
 }
 
 .dropdownRetailers{
-	margin-left: 120px;
+	margin-left: 145px;
+}
+
+.dropdownRetailers2{
+	margin-left: 520px;
 }
 
 .dropdownProjecten{
@@ -947,6 +951,46 @@ h1.page-header {
 
 .dropdownProducten2{
 	margin-left: 380px;
+}
+
+.dropdownProducten3{
+	margin-left: 160px;
+}
+
+.dropdownPromotie {
+	margin-left: 100px;	
+}
+
+.dropdownPersoneel {
+	margin-left: 395px;
+}
+
+.dropdownPersoneel2 {
+	margin-left: 140px;
+}
+
+.dropdownPersoneel3 {
+	margin-left: 270px;
+}
+
+.dropdownPersoneel4 {
+	margin-left: 430px;
+}
+
+.dropdownPersoneel5 {
+	margin-left: 475px;
+}
+
+.dropdownConcurenten {
+	margin-left: 290px;
+}
+
+.dropdownRegio {
+	margin-left: 370px;
+}
+
+.biggerHeading {
+	height: 110px;
 }
 
 .greenLabel {
