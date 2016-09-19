@@ -14,16 +14,6 @@ var randomScalingFactor = function(){ return Math.round(Math.random()*1000)};
 					data : [200,160,212,180,175,252,230]
 				},
 				{
-					label: "My First dataset",
-					fillColor : "rgba(48, 86, 255, 0.2)",
-					strokeColor : "rgba(48, 86, 255, 1)",
-					pointColor : "rgba(48, 86, 255, 1)",
-					pointStrokeColor : "#fff",
-					pointHighlightFill : "#fff",
-					pointHighlightStroke : "rgba(48, 164, 255, 1)",
-					data : [20,44,70,10,30,15,12]
-				},
-				{
 					label: "My Second dataset",
 					fillColor : "rgba(255,51,0,0.2)",
 					strokeColor : "rgba(255,51,0,1)",
@@ -32,6 +22,16 @@ var randomScalingFactor = function(){ return Math.round(Math.random()*1000)};
 					pointHighlightFill : "#fff",
 					pointHighlightStroke : "rgba(220,220,220,1)",
 					data : [180,116,142,170,145,237,218]
+				},
+				{
+					label: "My First dataset",
+					fillColor : "rgba(48, 146, 255, 0.2)",
+					strokeColor : "rgba(48, 146, 255, 1)",
+					pointColor : "rgba(48, 146, 255, 1)",
+					pointStrokeColor : "#fff",
+					pointHighlightFill : "#fff",
+					pointHighlightStroke : "rgba(48, 146, 255, 1)",
+					data : [20,44,70,10,30,15,12]
 				}
 			]
 		}
@@ -50,16 +50,6 @@ var randomScalingFactor = function(){ return Math.round(Math.random()*1000)};
 					data : [600,480,636,540,525,756,690]
 				},
 				{
-					label: "My First dataset",
-					fillColor : "rgba(48, 86, 255, 0.2)",
-					strokeColor : "rgba(48, 86, 255, 1)",
-					pointColor : "rgba(48, 86, 255, 1)",
-					pointStrokeColor : "#fff",
-					pointHighlightFill : "#fff",
-					pointHighlightStroke : "rgba(48, 164, 255, 1)",
-					data : [60,132,210,30,90,45,36]
-				},
-				{
 					label: "My Second dataset",
 					fillColor : "rgba(255,51,0,0.2)",
 					strokeColor : "rgba(255,51,0,1)",
@@ -68,6 +58,16 @@ var randomScalingFactor = function(){ return Math.round(Math.random()*1000)};
 					pointHighlightFill : "#fff",
 					pointHighlightStroke : "rgba(220,220,220,1)",
 					data : [540,348,426,510,435,711,654]
+				},
+				{
+					label: "My First dataset",
+					fillColor : "rgba(48, 146, 255, 0.2)",
+					strokeColor : "rgba(48, 146, 255, 1)",
+					pointColor : "rgba(48, 146, 255, 1)",
+					pointStrokeColor : "#fff",
+					pointHighlightFill : "#fff",
+					pointHighlightStroke : "rgba(48, 146, 255, 1)",
+					data : [60,132,210,30,90,45,36]
 				}
 			]
 		}

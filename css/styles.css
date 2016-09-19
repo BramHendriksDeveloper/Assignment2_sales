@@ -933,7 +933,7 @@ h1.page-header {
 	margin-top: 20px;
 }
 
-.noMargin {
+.noMargin2 {
 	padding: 0;
 }
 
@@ -947,4 +947,31 @@ h1.page-header {
 
 .dropdownProducten2{
 	margin-left: 380px;
+}
+
+.greenLabel {
+	color: rgba(24, 158, 82, 1);
+}
+
+.yellowLabel {
+	color: rgba(255,170,0,1);
+}
+
+.redLabel {
+	color: rgba(255,51,0,1);
+}
+
+.blueLabel {
+	color: rgba(48, 164, 255, 1);
+}
+
+.greyLabel {
+	color: #5f6468;
+}
+
+.noMargin {
+	margin: 0;
+	margin-right: 5px;
+	padding: 0;
+	float: left;
 }
