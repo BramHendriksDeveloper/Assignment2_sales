@@ -1019,3 +1019,19 @@ h1.page-header {
 	padding: 0;
 	float: left;
 }
+
+.fixed-table-container thead th.headerBlue {
+	background: #f7f7f8;
+	border-color: #ddd;
+	color: rgba(48, 164, 255, 1);
+	font-weight: 300;
+	font-size: 16px;
+}
+
+.fixed-table-container thead th.headerGreen {
+	background: #f7f7f8;
+	border-color: #ddd;
+	color: rgba(24, 158, 82, 1);
+	font-weight: 300;
+	font-size: 16px;
+}

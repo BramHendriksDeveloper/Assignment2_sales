@@ -108,24 +108,103 @@
 			</div>
             <div class="col-lg-6">
 				<div class="panel panel-default">
-					<div class="panel-heading">Branches</div>
+					<div class="panel-heading"><div class="greyLabel noMargin">Productassortiment-markt combinaties: </div><div class="blueLabel noMargin">Nederland -</div><div class="greenLabel noMargin">Duitsland</div></div>
 					<div class="panel-body">
-                        <div class="col-xs-6 col-md-4">
+                        <div class="col-xs-6 col-md-6">
                             <table data-toggle="table" id="table-style" data-url="tables/data2.json" data-row-style="rowStyle">
                                 <thead>
                                     <tr>
-                                        <th data-field="branch" >Branch</th>
+                                        <th class="headerBlue" data-field="branch" >Branch</th>
+                                        <th class="headerBlue" data-field="product" >Product</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td data-field="product">Techniek</td>
+                                        <td data-field="branch">Techniek</td>
+                                        <td data-field="product">Aircleaner</td>
                                     </tr>
                                     <tr>
-                                        <td data-field="product">Huishouden</td>
+                                        <td data-field="branch"></td>
+                                        <td data-field="product">Heather</td>
                                     </tr>
                                     <tr>
-                                        <td data-field="product">Airconditioning</td>
+                                        <td data-field="branch"></td>
+                                        <td data-field="product">AC</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-field="branch">Airconditioning</td>
+                                        <td data-field="product">Aircleaner</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-field="branch"></td>
+                                        <td data-field="product">AC</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-field="branch">Huishouden</td>
+                                        <td data-field="product">Heather</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-field="branch"></td>
+                                        <td data-field="product">AC</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <script>
+                                $(function () {
+                                    $('#hover, #striped, #condensed').click(function () {
+                                        var classes = 'table';
+                            
+                                        if ($('#hover').prop('checked')) {
+                                            classes += ' table-hover';
+                                        }
+                                        if ($('#condensed').prop('checked')) {
+                                            classes += ' table-condensed';
+                                        }
+                                        $('#table-style').bootstrapTable('destroy')
+                                            .bootstrapTable({
+                                                classes: classes,
+                                                striped: $('#striped').prop('checked')
+                                            });
+                                    });
+                                });
+                            </script>
+                        </div>
+                        <div class="col-xs-6 col-md-6">
+                            <table data-toggle="table" id="table-style" data-url="tables/data2.json" data-row-style="rowStyle">
+                                <thead>
+                                    <tr>
+                                        <th class="headerGreen" data-field="branch" >Branch</th>
+                                        <th class="headerGreen" data-field="product" >Product</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td data-field="branch">Techniek</td>
+                                        <td data-field="product">Aircleaner</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-field="branch"></td>
+                                        <td data-field="product">Heather</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-field="branch"></td>
+                                        <td data-field="product">AC</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-field="branch">Airconditioning</td>
+                                        <td data-field="product">Aircleaner</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-field="branch"></td>
+                                        <td data-field="product">AC</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-field="branch">Huishouden</td>
+                                        <td data-field="product">Heather</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-field="branch"></td>
+                                        <td data-field="product">AC</td>
                                     </tr>
                                 </tbody>
                             </table>
